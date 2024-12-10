@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <style>
+        nav{
+            margin-left: 480px;
+            margin-top: 150px;
+            background-color: rgba(0,0,0,0.4);
+            border: 1px solid greenyellow;
+            width: 500px;
+            height: 350px;
+            border-radius: 10px;
+        }
+        input{
+            margin-left: 10px;
+            margin-top: 10px;
+            width: 170px;
+            height: 30px;
+            border-radius: 7px;
+        }
+        form{
+            margin-left: 50px;
+        }
+
+        body{
+            background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(../image/getcertified.jpg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 1200px;
+        }
+        button{
+            width: 120px;
+            height: 28px;
+            color: white;
+            background: transparent;
+            border-radius: 10px;
+            cursor: pointer;
+            position: relative;
+            overflow: hidden;
+            margin-top: 10px;
+        }
+        span{
+            background: rgba(104, 238, 92, 0.863);
+            height: 100%;
+            width: 0;
+            border-radius: 10px;
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            z-index: -1px;
+            transition: 0.5s;
+        }
+        button:hover span{
+            width: 100%;
+        }
+        button:hover{
+            border: none;
+        }
+    </style>
+</head>
+<body>
+    <div style="overflow-x: auto;">
+        <a href="login .html"><button type="button"><span></span><img src="../image/back-button.png"></button></a>
+    <nav>
+    <h1 style="margin-left: 60px; color: white;">REGISTRATION FORM</h1>
+    <form action="home.html" method="post">
+        <input type="Fist name" placeholder="enter your Fist name" required>
+        <input type="Last name" placeholder="enter your Last name" required><br>
+        <input type="text" placeholder="enter your Username" required>
+        <input type="email" placeholder="Enter your email" required><br>
+        <input type="password" placeholder="Enter new Password">
+        <input type="password" placeholder="confirm your Password"><br>
+        <input type="number" placeholder=" Enter your phone number">
+        <input type="date"><br>
+        <button type="submit" style="margin-left: 130px;"><b><span></span>submit</b></button><br>
+
+    </form>
+    </nav>
+    </div>
+</body>
+</html>
